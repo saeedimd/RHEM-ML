@@ -4,7 +4,7 @@
 This repository contains the source code of an artificial neural network (ANN) that emulates the Rangeland Hydrology and Erosion Model [**(RHEM)**](https://dss.tucson.ars.ag.gov/rhem/). 
 The tutorial notebooks are the step-by-step guide to use the trained Emulator and to create one from scratch, train and evaluate it.
 
-## Description
+### Description
 
 **RHEM** is a newly conceptualized, process-based erosion prediction tool specific for rangeland application, based on fundamentals of infiltration, hydrology, plant science,
 hydraulics and erosion mechanics. 
@@ -14,7 +14,7 @@ We designed an ANN that is able to recreate the RHEM outputs
 
 ![](emulator.png)
 
-## Required Python Packages
+### Required Python Packages
 
 The following Python packages are required to run the the tutorial notebooks:
 
@@ -29,7 +29,7 @@ The following Python packages are required to run the the tutorial notebooks:
 - [GeoPandas](https://geopandas.org/en/stable/)
 - [SALib](https://salib.readthedocs.io/en/latest/)
 
-## Tutorial Notebooks
+### Tutorial Notebooks
 
 - **Use_Emulator.ipynb** is a step-by-step guide to:
   - Create a RHEM scenario or a batch of scenarios 
@@ -39,7 +39,7 @@ The following Python packages are required to run the the tutorial notebooks:
   - Create the Emulator from scratch and train it
   - Evaluate the trained Emulator with different approaches to see if it resembles the RHEM.
 
-## Files
+### Files
 
 - **Data**
 
@@ -81,6 +81,6 @@ The following Python packages are required to run the the tutorial notebooks:
   
   The .csv files required to test the Emulator to see if it resembles the change patterns of the RHEM outputs when all but one input variables are modified.
 
-# Reference
+### Reference
 - 
 
