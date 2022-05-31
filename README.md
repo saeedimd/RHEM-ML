@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/480389335.svg)](https://zenodo.org/badge/latestdoi/480389335)
 
 # An Artificial Neural Network-Based Emulator of the RHEM
 
