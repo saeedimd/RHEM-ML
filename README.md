@@ -83,5 +83,6 @@ The following Python packages are required to run the the tutorial notebooks:
   The .csv files required to test the Emulator to see if it resembles the change patterns of the RHEM outputs when all but one input variables are modified.
 
 ### Reference
-- 
+- Saeedimoghaddam, M., Nearing, G., Hernandez, M., Nearing, M., Goodrich, D., & Metz, L. (2022). An Artificial Neural Network Emulator of the Rangeland Hydrology and Erosion Model. In EarthArXiv. [https://doi.org/10.31223/x5n93j](https://doi.org/10.31223/X5N93J)
+
 
