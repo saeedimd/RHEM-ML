@@ -5,6 +5,7 @@
 This repository contains 
 1- The source code of an artificial neural network (ANN) that emulates the Rangeland Hydrology and Erosion Model [**(RHEM)**](https://dss.tucson.ars.ag.gov/rhem/). 
 The tutorial notebooks of Use_Emulator.ipynb and Train_Emulator.ipynb are the step-by-step guide to use the trained Emulator and to create one from scratch, train and evaluate it.
+
 2- The source code of an ANN that estimates the Foliar/Ground cover input variables of the RHEM from Remote Sensing data.
 The tutorial notebooks of Estimate_Foliar_Ground_Cover.ipynb and Train_Foliar_Ground_Cover.ipynb are the step-by-step guide to use the trained Foliar/Ground cover estimator and to create one from scratch, train and evaluate it.
 
