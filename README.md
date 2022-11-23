@@ -2,18 +2,21 @@
 
 # An Artificial Neural Network-Based Emulator of the RHEM
 
-This repository contains the source code of an artificial neural network (ANN) that emulates the Rangeland Hydrology and Erosion Model [**(RHEM)**](https://dss.tucson.ars.ag.gov/rhem/). 
-The tutorial notebooks are the step-by-step guide to use the trained Emulator and to create one from scratch, train and evaluate it.
+This repository contains 
+1- The source code of an artificial neural network (ANN) that emulates the Rangeland Hydrology and Erosion Model [**(RHEM)**](https://dss.tucson.ars.ag.gov/rhem/). 
+The tutorial notebooks of Use_Emulator.ipynb and Train_Emulator.ipynb are the step-by-step guide to use the trained Emulator and to create one from scratch, train and evaluate it.
+2- The source code of an ANN that estimates the Foliar/Ground cover input variables of the RHEM from Remote Sensing data.
+The tutorial notebooks of Estimate_Foliar_Ground_Cover.ipynb and Train_Foliar_Ground_Cover.ipynb are the step-by-step guide to use the trained Foliar/Ground cover estimator and to create one from scratch, train and evaluate it.
 
 ### Description
 
-**RHEM** is a newly conceptualized, process-based erosion prediction tool specific for rangeland application, based on fundamentals of infiltration, hydrology, plant science,
-hydraulics and erosion mechanics. 
-For the applications such as hydraulic soil erosion estimation over a large area and at a finer spatial scale, RHEM requires too much computation time and resources. 
-We designed an ANN that is able to recreate the RHEM outputs 
-(runoff, soil loss, and sediment yield) with high accuracy and 13 billion times faster computation time. Figure below shows the architecture of the ANN.
+**RHEM** is a process-based erosion prediction tool specific for rangeland application, based on fundamentals of infiltration, hydrology, plant science, hydraulics and erosion mechanics. For the applications such as hydraulic soil erosion estimation over a large area and at a finer spatial scale, RHEM requires too much computation time and resources. We designed an ANN that is able to recreate the RHEM outputs (runoff, soil loss, and sediment yield) with high accuracy and 13 billion times faster computation time by a GPU. Figure below shows the architecture of the ANN.
 
 ![](emulator.png)
+
+The information about the Foliar/Ground cover input variables of the RHEM is not available for every location and time. Thus, we designed an ANN that is able to estimate Foliar/Ground cover fractions of the rangelands for every location and time since 1987. It uses [Landsat](https://landsat.gsfc.nasa.gov/) and [PRISM](https://prism.oregonstate.edu/) time series as well as the information about the soil texture of the location and its latitude and longitude. Figure below shows the architecture of the ANN.
+
+![](cover_estimator.png)
 
 ### Required Python Packages
 
@@ -39,6 +42,15 @@ The following Python packages are required to run the the tutorial notebooks:
 - **Train_Emulator.ipynb** is a step-by-step guide to:
   - Create the Emulator from scratch and train it
   - Evaluate the trained Emulator with different approaches to see if it resembles the RHEM.
+
+- **Estimate_Foliar_Ground_Cover.ipynb** is a step-by-step guide to:
+  - Use the trained ANN model to estimate Foliar/Ground cover fractions for some rangeland points.
+  - Get the RHEM outputs using the estimated covers.
+
+- **Train_Foliar_Ground_Cover.ipynb** is a step-by-step guide to:
+  - Create a Foliar/Ground cover estimator from scratch, train and evaluate it.
+  - Estimate the covers of those points by the trained model.
+  - Get the RHEM outputs using the estimated covers.
 
 ### Files
 
@@ -84,5 +96,3 @@ The following Python packages are required to run the the tutorial notebooks:
 
 ### Reference
 - Saeedimoghaddam, M., Nearing, G., Hernandez, M., Nearing, M., Goodrich, D., & Metz, L. (2022). An Artificial Neural Network Emulator of the Rangeland Hydrology and Erosion Model. In EarthArXiv. [https://doi.org/10.31223/x5n93j](https://doi.org/10.31223/X5N93J)
-
-
