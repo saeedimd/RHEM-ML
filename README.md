@@ -55,6 +55,7 @@ The following Python packages are required to run the the tutorial notebooks:
   - Get the RHEM outputs using the estimated covers.
 
 ### Files
+(Download Files.zip from [this link](https://github.com/saeedimd/RHEM-ML/releases/latest))
 
 - **Data**
 
@@ -66,11 +67,23 @@ The following Python packages are required to run the the tutorial notebooks:
 
   4- diffNRI.npz: The numpy array that contains the temporal variations of the RHEM outputs at specific surveyed locations
 
-- **Trained_Emulator**
+  5- RSdataset.csv: The NRI/BLM data plots and their ground/foliar cover information (lat/long info were excluded)
+
+  6- dataset_example.csv: An example of data plots for calculating their foliar/ground covers
+
+  7- NRI_BLM_Landsat.npz: The preprocessed Landsat time series data for NRI/BLM plots
+
+  8- NRI_BLM_PRISM.npz: The preprocessed PRISM time series data for NRI/BLM plots
+
+  9- RS_preprocessed_data: The preprocessed Landsat and PRISM data for dataset_example
+
+- **Trained_Models**
 
   1- emulator.h5: A ready to use RHEM Emulator trained with synthetic scenarios
   
   2- emulator_fineTuned.h5: A fine-tuned version of the emulator.h5 file based on the real-world scenarios
+
+  3- modelRS_weights: A ready to use ground/foliar cover estimator trained with NRI/BLM plots
 
 - **Parameter_Files**
 
@@ -86,7 +99,7 @@ The following Python packages are required to run the the tutorial notebooks:
 
 - **Normalizers** 
 
-  The .pkl files required to normalize the training data of the Emulator into [0,1] range.
+  The .pkl files required to normalize the training data of the models into [0,1] range.
 
 - **Cross-Validation_Results**
   
